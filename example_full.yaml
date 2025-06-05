@@ -1,0 +1,35 @@
+external_components:
+  - source: github://andyboeh/esphome-elero
+
+spi:
+  clk_pin: GPIO18
+  mosi_pin: GPIO23
+  miso_pin: GPIO19
+
+elero:
+  cs_pin: GPIO5
+  gdo0_pin: GPIO26
+  freq0: 0x7a
+  freq1: 0x71
+  freq2: 0x21
+
+cover:
+  - platform: elero
+    blind_address: 0xa831e5
+    channel: 4
+    remote_address: 0xf0d008
+    name: Schlafzimmer
+    open_duration: 25s
+    close_duration: 22s
+    poll_interval: 5min
+    supports_tilt: False
+    payload_1: 0x00
+    payload_2: 0x04
+    pck_inf1: 0x6a
+    pck_inf2: 0x00
+    hop: 0x0a
+    command_check: 0x00
+    command_stop: 0x10
+    command_up: 0x20
+    command_down: 0x40
+    command_tilt: 0x24
