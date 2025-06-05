@@ -23,7 +23,7 @@ If you like my work, consider sponsoring this project via [Github Sponsors](http
 
 ## Configuration
 
-See the provided [example file](example.yaml) for the minimum configuration required to configure a blind. Some optional parameters can also be set that allow the tuning of your system:
+See the provided [example file](example.yaml) for the minimum configuration required to configure a blind. A full example including all optional parameters is available in [example_full.yaml](example_full.yaml). Some optional parameters can also be set that allow the tuning of your system:
 
 ```
 external_components:
