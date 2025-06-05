@@ -303,7 +303,7 @@ void Elero::add_r20_to_nibbles(uint8_t* msg, uint8_t r20, uint8_t start, uint8_t
 {
   uint8_t i;
 
-  for( i = 0; i < 8; i++ )
+  for(i = start; i < length; i++)
   {
     uint8_t d = msg[i];
 
