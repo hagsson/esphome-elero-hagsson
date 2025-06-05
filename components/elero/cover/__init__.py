@@ -77,3 +77,5 @@ async def to_code(config):
     cg.add(var.set_command_tilt(config[CONF_COMMAND_TILT]))
     cg.add(var.set_poll_interval(config[CONF_POLL_INTERVAL]))
     cg.add(var.set_supports_tilt(config[CONF_SUPPORTS_TILT]))
+
+    return var

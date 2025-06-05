@@ -40,3 +40,5 @@ async def to_code(config):
     cg.add(var.set_freq0(config[CONF_FREQ0]))
     cg.add(var.set_freq1(config[CONF_FREQ1]))
     cg.add(var.set_freq2(config[CONF_FREQ2]))
+
+    return var
