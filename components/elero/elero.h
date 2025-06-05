@@ -31,9 +31,11 @@ static const uint8_t ELERO_STATE_START_MOVING_UP = 0x08;
 static const uint8_t ELERO_STATE_START_MOVING_DOWN = 0x09;
 static const uint8_t ELERO_STATE_MOVING_UP = 0x0a;
 static const uint8_t ELERO_STATE_MOVING_DOWN = 0x0b;
-static const uint8_t ELERO_STATE_STOPPED = 0x0d;
-static const uint8_t ELERO_STATE_TOP_TILT = 0x0e;
-static const uint8_t ELERO_STATE_BOTTOM_TILT = 0x0f;
+// state values according to https://github.com/stanleypa/eleropy/blob/main/eleroProtocol.py
+// index 15 (0x0f) represents "Off"; there is no dedicated bottom tilt state
+static const uint8_t ELERO_STATE_STOPPED = 0x0c;       // called "Stopped" in protocol
+static const uint8_t ELERO_STATE_TOP_TILT = 0x0d;       // "Top" + tilt
+static const uint8_t ELERO_STATE_BOTTOM_TILT = 0x0e;    // "Bottom" + intermediate
 static const uint8_t ELERO_STATE_OFF = 0x0f;
 static const uint8_t ELERO_STATE_ON = 0x10;
 
