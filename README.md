@@ -27,7 +27,7 @@ See the provided [example file](example.yaml) for the minimum configuration requ
 
 ```
 external_components:
-  - source: github://andyboeh/esphome-elero
+  - source: github://hagsson/esphome-elero-hagsson
 
 spi:
   clk_pin: GPIO18
